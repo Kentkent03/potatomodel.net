@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PotatoModel</title>
+  <!--Link to CSS-->
+  <link rel="stylesheet" href="style.css">
+  <!--Box Icons-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <!--Header-->
+  <header>
+    <!--Nav-->
+    <div class="nav container">
+      <a href="#" class="logo">PotatoModel</a>
+      <!--CartLoginIcons-->
+      <div class="icons-container">
+        <i class="bx bx-log-in" id="btnLogin-popup"></i>
+        <i class="bx bx-shopping-bag" id="cart-icon"></i>
+      </div>
+      <!--Cart-->
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <!--Content-->
+        <div class="cart-content">
+        </div>
+        <!--Total-->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <!--BuyButton-->
+        <button type="button" class="btn-buy">Buy Now</button>
+        <!--CartClose-->
+        <i class="bx bx-x" id="close-cart"></i>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper">
+    <span class="icon-close">
+      <i class='bx bx-x'></i>
+    </span>
+    <!--Login Form-->
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><i class='bx bx-envelope' ></i></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><i class='bx bx-lock-alt' ></i></span>
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox">Remember Me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="login-register">
+          <p>Don't Have An Account?<a href="#" class="register-link">Register Now!</a></p>
+        </div>
+      </form>
+    </div>
+    <!-- Registration Form -->
+    <div class="form-box register">
+      <h2>Register</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><i class='bx bxs-user'></i></span>
+          <input type="text" required>
+          <label>Username</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><i class='bx bx-envelope' ></i></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><i class='bx bx-lock-alt' ></i></span>
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox">I Agree To The Terms & Conditions</label>
+        </div>
+        <button type="submit" class="btn">Register</button>
+        <div class="login-register">
+          <p>Already Have An Account?<a href="#" class="login-link">Login Now!</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="animation-area">
+    <ul class="box-area">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <!--Shop-->
+  <section class="shop container">
+    <div class="tab-box">
+      <button class="tab-btn active">Nature</button>
+      <button class="tab-btn">Desserts</button>
+    </div>
+    <!--Content-->
+    <div class="shop-content active">
+      <!--Box1-->
+      <div class="product-box">
+        <img src="images/product1.jpg" alt="" class="product-img">
+        <h2 class="product-title">Pine Tree</h2>
+        <span class="price">$1.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--End-->
+      <!--Box2-->
+      <div class="product-box">
+        <img src="images/product2.jpg" alt="" class="product-img">
+        <h2 class="product-title">Oak Tree</h2>
+        <span class="price">$1.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--End-->
+      <!--Box3-->
+      <div class="product-box">
+        <img src="images/product3.jpg" alt="" class="product-img">
+        <h2 class="product-title">Bushes</h2>
+        <span class="price">$1.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--End-->
+      <!--Box4-->
+      <div class="product-box">
+        <img src="images/product4.jpg" alt="" class="product-img">
+        <h2 class="product-title">Rocks</h2>
+        <span class="price">$1.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--End-->
+      <!--Box5-->
+      <div class="product-box">
+        <img src="images/product5.jpg" alt="" class="product-img">
+        <h2 class="product-title">Palm Tree</h2>
+        <span class="price">$1.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--End-->
+      <!--Box6-->
+      <div class="product-box">
+        <img src="images/product6.jpg" alt="" class="product-img">
+        <h2 class="product-title">Logs</h2>
+        <span class="price">$1.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--End-->
+      <!--Box7-->
+      <div class="product-box">
+        <img src="images/product7.jpg" alt="" class="product-img">
+        <h2 class="product-title">Mushrooms</h2>
+        <span class="price">$1.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--End-->
+       <!--Box8-->
+       <div class="product-box">
+        <img src="images/product8.jpg" alt="" class="product-img">
+        <h2 class="product-title">Grass</h2>
+        <span class="price">$1.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--End-->
+    </div>
+    <div class="shop-content">
+      <!--Box1-->
+      <div class="product-box">
+        <img src="images/product9.jpg" alt="" class="product-img">
+        <h2 class="product-title">Chocolate Bar</h2>
+        <span class="price">$1.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--End-->
+      <!--Box2-->
+      <div class="product-box">
+        <img src="images/product10.jpg" alt="" class="product-img">
+        <h2 class="product-title">Wrapped Candy</h2>
+        <span class="price">$1.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--End-->
+      <!--Box3-->
+      <div class="product-box">
+        <img src="images/product11.jpg" alt="" class="product-img">
+        <h2 class="product-title">Cotton Candies</h2>
+        <span class="price">$1.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--End-->
+      <!--Box4-->
+      <div class="product-box">
+        <img src="images/product12.jpg" alt="" class="product-img">
+        <h2 class="product-title">Lollipops</h2>
+        <span class="price">$1.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--End-->
+      <!--Box5-->
+      <div class="product-box">
+        <img src="images/product13.jpg" alt="" class="product-img">
+        <h2 class="product-title">Cupcake</h2>
+        <span class="price">$1.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--End-->
+      <!--Box6-->
+      <div class="product-box">
+        <img src="images/product14.jpg" alt="" class="product-img">
+        <h2 class="product-title">Ice Creams</h2>
+        <span class="price">$1.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--End-->
+       <!--Box7-->
+       <div class="product-box">
+        <img src="images/product15.jpg" alt="" class="product-img">
+        <h2 class="product-title">Donuts</h2>
+        <span class="price">$1.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--End-->
+       <!--Box8-->
+       <div class="product-box">
+        <img src="images/product16.jpg" alt="" class="product-img">
+        <h2 class="product-title">Pudding</h2>
+        <span class="price">$1.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--End-->
+    </div>
+  </section>
+  <!--LinkJS-->
+  <script>
+    const tabs = document.querySelectorAll(".tab-btn");
+    const all_content = document.querySelectorAll(".shop-content");
+  
+     document.addEventListener("DOMContentLoaded", function () {
+      const animationArea = document.querySelector(".animation-area");
+      const tabs = document.querySelectorAll(".tab-btn");
+
+      const gradients = [
+        "linear-gradient(to bottom, #FFFFFF, #AEFD6C)",
+        "linear-gradient(to bottom, #FFFFFF, #FFC0CB)",
+        "linear-gradient(to bottom, #FFFFFF, #87CEFA)",
+        "linear-gradient(to bottom, #FFFFFF, #FFFFE0)",
+        "linear-gradient(to bottom, #FFFFFF, #FFCCCB)"
+      ];
+
+      tabs.forEach((tab, index) => {
+        tab.addEventListener("click", (e) => {
+          tabs.forEach((tab) => {
+            tab.classList.remove("active");});
+          tab.classList.add("active");
+
+          all_content.forEach(content => {content.classList.remove("active")});
+          all_content[index].classList.add("active");
+          animationArea.style.background = gradients[index];
+        });
+      });
+    });
+  </script>
+  <script src="/main.js"></script>
+  <script src="/button.js"></script>
+  <script src="/cart.js"></script>
+</body>
+</html>
